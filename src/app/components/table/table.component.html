@@ -1,0 +1,19 @@
+<div class="table-responsive">
+  <div *ngIf="!data">
+    Loading...
+  </div>
+  <table *ngIf="data" class="table">
+    <thead>
+      <tr>
+        <th *ngFor="let col of columns">
+          {{col.display}}
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let object of data">
+        <td *ngFor="let col of columns" [innerHtml]="object[col.slugName]"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
