@@ -1,5 +1,16 @@
 # angularx-components
 
+**Work in progress** - the library current includes only a basic table component and no unit tests
+
+A collection of useful, reusable Angular Components
+
+For Angular 2 and above
+
+Supplied in UMD Bundle format through NPM
+
+https://www.npmjs.com/package/angularx-components  
+https://github.com/edwardpayton/angularx-components
+
 ## Installation
 
 To install this library, run:
