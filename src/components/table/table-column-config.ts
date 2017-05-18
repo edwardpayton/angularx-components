@@ -1,4 +1,4 @@
-export class TableColumns {
+export class ColumnConfig {
     slugName: string;
 
     constructor(
