@@ -1,6 +1,6 @@
 {
 	"name": "angularx-components",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "A collection of useful, reusable Angular Components",
 	"main": "bundles/angularx-components.umd.min.js",
 	"module": "index.js",
@@ -25,13 +25,15 @@
 		"email": "edwardjpayton@gmail.com"
 	},
 	"license": "MIT",
-	"homepage": "https://github.com/edwardpayton/angularx-pipes",
+	"homepage": "https://github.com/edwardpayton/angularx-components",
 	"bugs": {
-		"url": "https://github.com/edwardpayton/angularx-pipes/issues"
+		"url": "https://github.com/edwardpayton/angularx-components/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/edwardpayton/angularx-pipes.git"
+		"url": "https://github.com/edwardpayton/angularx-components.git"
 	},
-	"peerDependencies": {}
+	"peerDependencies": {
+		"bootstrap": "^3.3.7"
+	}
 }
