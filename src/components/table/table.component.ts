@@ -21,7 +21,7 @@ import { TableSorting } from "./table-sorting";
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let d of data | orderBy: dataOrder()">
+        <tr *ngFor="let d of data">
           <td *ngFor="let column of columnConfig" [innerHtml]="d[column.slugName]"></td>
         </tr>
       </tbody>

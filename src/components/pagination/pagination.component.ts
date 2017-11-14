@@ -1,12 +1,12 @@
-import { Component, OnInit, OnDestroy, Input, EventEmitter } from '@angular/core';
+import { Component, OnInit, OnDestroy, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'pagination-component',
   //templateUrl: './pagination.component.html',
   template: `
-    <button (click)="previousPage()" [disabled]="isNotFirst()">{{ previousText }}</button> 
+    <button (click)="previousPage()" [disabled]="isNotFirst()">{{ previousText }}</button>
     <button (click)="nextPage()" [disabled]="isNotLast()">{{ nextText }}</button>
-    
+
     <p>page {{ page }} of {{ pageCount }}</p>
   `,
   styles: []
@@ -28,7 +28,7 @@ export class PaginationComponent implements OnInit {
     this.pageCurrent++;
     this.pageChangeEvent.emit(this.pageCurrent);
   }
-  
+
   onPageDown() {
     this.pageCurrent--;
     this.pageChangeEvent.emit(this.pageCurrent);
